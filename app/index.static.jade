@@ -22,7 +22,7 @@ body
         img(src="images/lol.png").olivki
         p ЧТО? ГДЕ? КОГДА?
         .login
-          a Вход
+          a(href="") Вход
   .middle
     .container
       img(src="images/ole.png")
@@ -36,44 +36,86 @@ body
         tr
           td.one Пусть все узнают!
           td.two 
-            a Facebook
+            a(href="") Facebook
           td.three 
-            a Одноклассники
+            a(href="") Одноклассники
           td.four 
-            a Вконтакте
+            a(href="") Вконтакте
           td.five 
-            a Twitter
-
+            a(href="") Twitter
 .judges
   .container
-    p СУДЬИ
-    .one
-      img(src="images/.png")
-      p.name
-      p.text
-    .two
-        img(src="images/.png")
-        p.name
-        p.text
-    .three
-        img(src="images/.png")
-        p.name
-        p.text
+    p.judgers СУДЬИ
+    .judgainer
+      .one
+        img(src="images/person1.png")
+        p.name Александр Друзь
+        p.text магистр игры, шестикратный обладатель приза «Хрустальная сова», трехкратный чемпион мира по игре «Что? Где? Когда?»
+      .two
+          img(src="images/person2.png")
+          p.name Евгений Суханов
+          p.text доктор юридических наук, профессор, заслуженный деятель науки Российской Федерации, заведующий кафедрой гражданского права МГУ им. Ломоносова
+      .three
+          img(src="images/person3.png")
+          p.name Николай Чудаков
+          p.text главный редактор Системы Юрист, игрок спортивной версии «Что? Где? Когда?», капитан команды
 
 .jury
   .container-2
-    .polosa-1
+    p.jurytext ИГРОВОЕ ЖЮРИ
     .photos
-    .polosa-2
-
+      img(src="images/Group.png")
 .rules
-  .container-3
-  //1234
+  .container
+    .content
+      img.five(src="images/5.png")
+      h1 простых правил
+      .rulainer
+        .rule1
+          p.rulename 10 вопросов
+          p.discript по будням с 13 по 24 апреля
+        .rule2
+          p.rulename 24 часа на ответ
+          p.discript в 10:00 мск мы публикуем новый вопрос и ответ на уже сыграный
+        .rule3
+          p.rulename Одна апелляция
+          p.discript Можно обжаловать только один ответ за игру
+        .rule4
+          p.rulename Одна попытка
+          p.discript Можно дать только один ответ
+        .rule5
+          p.rulename Объективная проверка
+          p.discript Игровое жюри проверит правильность каждого ответа
+      img.sculpture(src="images/Unknown-17.png")
+      .entergame
+        button ПЕРЕЙТИ В ИГРУ
 
 .allplaces
   .container
     p.zagolovok В офисе, дома и в дороге
-    img(src="")
+    img(src="images/Bitmap.png")
     p.text Игра доступна с любых компьютеров, мобильных устройств и планшетов
 
-
+.footer
+  .container
+    .left
+      .social
+        a(href="") 
+          img(src="images/f.png")
+        a(href="")
+          img(src="images/g.png")
+        a(href="")
+          img(src="images/l.png")
+        a(href="")
+          img(src="images/x.png")
+      p.one © Актион-диджитал, 2014
+      a(href="").two Правила игры
+      a(href="").three Технические требования
+    .center
+      p.one Онлайн-кубок России по игре
+      p.two Что? Где? Когда?
+      p.three среди юристов
+      p.four  Официальный хештег мероприятия #чтогдекогдаюристы
+    .right
+      p.one 8 800 333-01-15 
+      p.two с 9 до 18 по Москве звонок бесплатный

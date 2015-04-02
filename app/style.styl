@@ -3,12 +3,34 @@
 global-reset()
 
 $opensans = 'Open Sans', Arial, sans-serif
+
+
+bold(font-size = 13px, line-height = 21px)
+  font: 700 font-size/line-height font
+  -webkit-font-smoothing: antialiased
+
+thin(font-size = 13px, line-height = 21px)
+  font: 200 font-size/line-height font
+  -webkit-font-smoothing: antialiased
+
+light(font-size = 13px, line-height = 21px)
+  font: 300 font-size/line-height font
+  -webkit-font-smoothing: antialiased
+
+regular(font-size = 13px, line-height = 21px)
+  font: 400 font-size/line-height font
+  -webkit-font-smoothing: antialiased
+
+medium(font-size = 13px, line-height = 21px)
+  font: 500 font-size/line-height font
+  -webkit-font-smoothing: antialiased
     
 body
   background-color: #464552
   
 .container
-  max-width 960px
+  min-width 960px
+  max-width: 960px
   position relative
   margin 0 auto
   clearfix()
@@ -16,7 +38,7 @@ body
 .header
   display: block
   .head
-    height: 166px
+    height: 116px
     .logo
       float: left
       margin-top: 23px
@@ -24,59 +46,91 @@ body
     .login
       float: right
       margin-top: 49px
-      
+      font-family: $opensans
+      color: white
+      font-size: 16px
+      a
+        text-decoration: dotted
     
     .olivki
       position: absolute
-      left: 35%
+      left: 50%
       top: 23px
+      transform: translateX(-50%)
     p
       position: absolute
-      top: 250px
-      left: 250px
-      
-  .center
+      top: 54px
+      left: 396px
+      font-size: 20px
+      font-family: $opensans
+      color: white
+
+  .middle
     position: relative
-    height: 1024px
-    min-height: 600px
-    height: 100vh
+    min-height: 819px
     background-color: rgb(255, 69, 53)
-    background: url('../images/.png') no-repeat
-    background-size: cover
-  .social-buttons
-    height: 168px
-.judges
-  .container
-    height: 370px
-    border: 7px solid #393744
-    font-family: 'Open Sans', Arial, sans-serif
-    .judgers
+    background: url('../images/background.png') no-repeat
+    background-size: cover 
+    
+    img
+      position: absolute
+      top: 96px
+      left: 50%
+      transform: translateX(-50%) 
+      
+    h1
       text-align: center
-      height: 20px
-      width: 130px
-      margin: 0 auto
-      position: relative
-      top: -10px
-      background-color: #454352
-      color: #FEFEFE
-    .judgainer
-      max-width: 660px
-      margin: 80px auto 0 auto
-      .one, .two, .three
-        color: #F6F6F6
-        display: inline-block
-        text-align: center
-        height: 220px
-        img
-          height: 120px
-        .name
-          margin-top: 15px
-          font-size: 13px
-        .text
-          margin-top: 20px
-          font-size: 11px
-          width: 180px
-      .two
-        margin: 0 40px 0 60px
-      .one, .three
-        vertical-align: top
+      font-family: $opensans
+      font-size: 60px
+      color: white
+      margin-top: 22px
+      
+    p
+      text-align: center
+      font-family: $opensans
+      font-size: 12px
+      color: white
+      margin-top: 328px
+      
+    h2
+      text-align: center
+      font-family: $opensans
+      font-size: 30px
+      color: white
+      margin-top: 62px
+      
+    button
+      background: #2387F3
+      width: 213px
+      height: 62px
+      border-radius: 20px
+      border: none
+      position: absolute
+      left: 50%
+      font-size: 20px 
+      font-family: $opensans
+      color: white
+      transform: translateX(-50%)
+      top: 664px
+      
+  .social-buttons
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    color: white
+    font-family: $opensans
+    font-size: 17px
+    table
+      border: 3px white solid
+      border-radius: 100px
+      td
+        padding: 10px
+        padding-right: 50px
+      td.one
+        border-right: 3px white solid
+        font-size: 20px
+        padding-left: 25px
+        padding-right: 25px
+      td.two
+        padding-left: 20px
+        

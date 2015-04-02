@@ -11,6 +11,12 @@ head
 
   script.
     require('initialize');
+    require('jquery.stellar');
+     $(function() {
+        $.stellar({
+           horizontalScrolling: false
+           });
+      });
 
 
 body
@@ -24,10 +30,18 @@ body
         .login
           a(href="") Вход
   .middle
+    .parallax
+      .par-1(data-stellar-ratio="2.5")
+      .par-2(data-stellar-ratio="1.2")
+      .par-3(data-stellar-ratio="3.1")
+      .par-4(data-stellar-ratio="2")
+      .par-5(data-stellar-ratio="2.5")
+      .par-6(data-stellar-ratio="1.5")  
     .container
       img(src="images/ole.png")
-      p Онлайн кубок России по игре
+      p.kubok Онлайн кубок России по игре
       h1 ЧТО? ГДЕ? КОГДА?
+      p.urists среди юристов
       h2 13 апреля
       button РЕГИСТРАЦИЯ
   .social-buttons

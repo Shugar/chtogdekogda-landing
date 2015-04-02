@@ -1,0 +1,48 @@
+@import 'nib'
+
+global-reset()
+
+mobile()
+  @media only screen and (max-width: 699px)
+    {block}
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3)
+    {block}
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71)
+    {block}
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)
+    {block}
+
+tablet()
+  @media screen and (min-width: 700px) and (max-width: 890px)
+    {block}
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+    {block}
+
+small_screen()
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1199px) and (orientation: portrait)
+    {block}
+
+hd()
+  @media only screen and (min-width: 1200px)
+    {block}
+    
+
+.container
+  max-width 1440px
+  position relative
+  margin 0 auto
+  clearfix()
+  
+.header
+  .head
+    height: 166px
+  .center
+    position: relative
+    height: 1024px
+    min-height: 600px
+    height: 100vh
+    background-color: rgb(255, 69, 53)
+    background: url('../images/background-head.jpg') no-repeat
+    background-size: cover
+  .social-buttons
+    height: 168px

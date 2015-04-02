@@ -29,7 +29,7 @@ Guidelines for writing your code:
 ##Stylus syntax
 
 
-###Вложенность
+####Вложенность
 
 ```sh
 .example-1
@@ -41,7 +41,7 @@ Guidelines for writing your code:
 
 ##Jade syntax
 
-###Блоки с контентом
+####Блоки с контентом
 ```sh
 .block(любой блок, например header)
   .container

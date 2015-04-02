@@ -47,3 +47,8 @@ Guidelines for writing your code:
   .container
     здесь контент
 ```
+##Github
+
+- Если добавили какие-либо файлы в проект: git add -A
+- Сверстали блок: git commit -a -m "твой комментарий" git push
+- 

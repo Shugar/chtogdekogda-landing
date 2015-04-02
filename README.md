@@ -1,4 +1,4 @@
-# ChtoGdeKogda-landing
+# chtogdekogda-landing
 
 We use:
   - nodejs

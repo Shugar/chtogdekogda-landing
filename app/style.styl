@@ -7,6 +7,15 @@ $ptserif = 'PT Serif', Arial, sans-serif
 $proxima = 'Proxima Nova', Arial, sans-serif
 $textbook = 'Textbook', Arial, sans-serif
 
+placeholder-color(color)
+  &:-moz-placeholder,
+  &::-moz-placeholder
+    color color
+    opacity 1
+    
+  &::-webkit-input-placeholder
+    color color
+
 bold(font-size = 13px, line-height = 21px)
   font: 700 font-size/line-height font
   -webkit-font-smoothing: antialiased
@@ -85,6 +94,8 @@ body
     background-size: cover
     min-width: 960px
     .parallax
+      animation-delay: 1.7s
+      margin-top: 25px
       position absolute
       top 0
       left 0
@@ -119,7 +130,7 @@ body
       width: 273px
       background-image: url('../images/par2.png')
     .par-5
-      right: 17%
+      right: 13%
       height: 670px
       width: 230px
       background-image: url('../images/par22.png')
@@ -131,6 +142,7 @@ body
       background-image: url('../images/par222.png')
     
     img
+      animation-delay: 1s
       position: absolute
       top: 96px
       left: 50%
@@ -148,22 +160,23 @@ body
     .urists, .kubok
       text-align: center
       font-family: $ptserif
-      font-size: 13px
+      font-size: 18px
     .urists
       margin-top: 20px
     
     h2
       text-align: center
       font-family: $ptserif, arial
-      font-size: 30px
+      font-size: 35px
 
       margin-top: 62px
       
     button
+      animation-delay: 1s
       background: #2387F3
       width: 213px
       height: 62px
-      border-radius: 20px
+      border-radius: 14px
       border: none
       position: absolute
       left: 50%
@@ -209,9 +222,9 @@ body
         padding-left: 20px
         
 .judges
-  margin-top: 20px
+  margin-top: 100px
   .container
-    height: 370px
+    height: 420px
     border: 7px solid #393744
     font-family: $textbook
     max-width: 950px
@@ -222,8 +235,9 @@ body
       width: 130px
       margin: 0 auto
       position: relative
-      top: -10px
-      background-color: #454352
+      top: -15px
+      padding-top: 5px
+      background-color: rgb(70, 69, 82)
       color: #FEFEFE
     .judgainer
       max-width: 660px
@@ -241,7 +255,7 @@ body
           font-size: 19px
         .text
           margin-top: 15px
-          font-size: 14px
+          font-size: 15px
           width: 180px
           line-height: 18px
       .two
@@ -249,6 +263,7 @@ body
       .one, .three
         vertical-align: top
 .jury
+  margin-top: 100px
   .container-2
     max-width: 960px
     margin: 0 auto
@@ -259,17 +274,75 @@ body
       font-family: $textbook
       color: white
     .photos
-      img
-        width: 960px
-        border-top: 10px solid #0088F7
-        border-bottom: 10px solid #0088F7
+      height: 194px
+      border: 18px #2387F3 solid
+      border-top: 14px #2387F3 solid
+      border-bottom: 14px #2387F3 solid
+      .jury-1,
+      .jury-2,
+      .jury-3,
+      .jury-4,
+      .jury-5,
+      .jury-6,
+      .jury-7,
+      .jury-8,
+      .jury-9,
+      .jury-10,
+      .jury-11,
+      .jury-12,
+      .jury-13,
+      .jury-14,
+      .jury-15,
+      .jury-16,
+      .jury-17
+        width: 77px
+        height: 97px
+        float: left
+        clearfix()
+
+      .jury-1
+        background: url('../images/p_0000.png') no-repeat
+      .jury-2
+        background: url('../images/p_0001.png') no-repeat
+      .jury-3
+        background: url('../images/p_0002.png') no-repeat
+      .jury-4
+        background: url('../images/p_0003.png') no-repeat
+      .jury-5
+        background: url('../images/p_0004.png') no-repeat
+      .jury-6
+        background: url('../images/p_0005.png') no-repeat
+      .jury-7
+        background: url('../images/p_0006.png') no-repeat
+      .jury-8
+        background: url('../images/p_0007.png') no-repeat
+      .jury-9
+        background: url('../images/p_0008.png') no-repeat
+      .jury-10
+        background: url('../images/p_0009.png') no-repeat
+      .jury-11
+        background: url('../images/p_0010.png') no-repeat
+      .jury-12
+        background: url('../images/p_0011.png') no-repeat
+      .jury-13
+        background: url('../images/p_0012.png') no-repeat
+      .jury-14
+        background: url('../images/p_0013.png') no-repeat
+      .jury-15
+        background: url('../images/p_0014.png') no-repeat
+      .jury-16
+        background: url('../images/p_0015.png') no-repeat
+      .jury-17
+        background: url('../images/p_0016.png') no-repeat
 .rules
+  margin-top: 100px
   height: 565px
+  background: url('../images/bubble.png') no-repeat
+  background-position: 50% 0%
   .container
     width: 960px
     margin: 0 auto
     height: 565px
-    background: url('../images/rulesbg.png')
     .content
       max-width: 800px
       margin: 0 auto
@@ -281,7 +354,7 @@ body
         left: 110px
       h1
         text-align: center
-        font-size: 50px
+        font-size: 55px
         top: 59px
         color: #0088f8
         left: 300px
@@ -299,17 +372,22 @@ body
           display: inline-block
           margin-bottom: 25px
           color: white
+          clearfix()
           .rulename
-            font-size: 20px
+            font-size: 22px
           .discript
-            margin-top: 18px
-            font-size: 12px
+            margin-top: 12px
+            font-size: 14px
+            line-height: 17px
         .rule1
           vertical-align: top
         .rule2, .rule4
           float: right
+          margin-right: 15px
         .rule3
           margin-bottom: 38px
+        .rule4
+          margin-top: 30px
       .sculpture
         position: absolute
         top: 316px
@@ -324,13 +402,19 @@ body
         margin: 0 auto
         padding: 11px
         border-radius: 14px
-        font-size: 12px
+        font-size: 14px
         position: absolute
         bottom: 55px
+        outline: none
+        &:hover
+          background-color: rgb(0, 140, 215)
+          transition: background-color 0.3s
 .allplaces
-  background: url('../images/bgbitmap.png') no-repeat
   height: 819px
   font-family: $textbook
+  background: url('../images/bgbitmap.png') no-repeat
+  background-position: 50% 50%
+  background-color: rgb(0, 140, 215)
   .zagolovok
     font-size: 45px
     line-height: 60px
@@ -354,6 +438,8 @@ body
     
 .footer
   height: 450px
+  background: url('../images/Rectangle 3.png') no-repeat
+  background-size: cover
   .left
     position: absolute
     font-family: Arial, sans-serif
@@ -378,7 +464,7 @@ body
       display: inline-block
       font-size: 14px
     .one, .three
-      font-family: $ptserif
+      font-family: Arial, sans-serif
   .right
     position: absolute
     font-family: $proxima
@@ -412,3 +498,339 @@ body
       font-family: $proxima
       font-size: 22px
       margin-top: 90px
+.created
+  height: 41px
+  text-align: center
+  .container
+    text-align: center
+    font-family: $opensans
+    font-size: 15px
+    p
+      margin-top: 10px
+      font-weight: 100
+      span
+        font-weight: 500
+      
+.system
+  height: 750px
+  font-family: $opensans
+  color white
+  outline none
+  .container
+    h1  
+      text-align center
+      font-size 17px
+      margin-top 45px
+    .buttons
+      position absolute
+      width 535px
+      top 100px
+      left 215px
+      .try
+        outline none
+        float left
+        width 140px
+        border 2px solid white
+        border-style dotted
+        padding 10px 10px 10px 10px
+        border-radius 10px
+        text-align center
+        background-color: #464552
+        color white
+        font-size 13px
+        overflow hidden
+      .try:hover
+        cursor pointer
+      .try:active
+        border 2px solid #2387F3
+      .call
+        font-size 13px
+        outline none
+        float left
+        margin-left 55px 
+        width 140px
+        border 2px solid white
+        border-style dotted
+        padding 10px 10px 10px 10px
+        border-radius 10px
+        text-align center
+        background-color: #464552
+        color white
+        overflow hidden
+      .call:hover
+        cursor pointer
+      .call:active
+         border 2px solid #2387F3
+      .buy
+        font-size 13px
+        outline none
+        float left
+        margin-left 57px
+        width 140px
+        border 2px solid white
+        border-style dotted
+        padding 10px 10px 10px 10px
+        border-radius 10px
+        text-align center
+        background-color: #464552
+        overflow hidden
+        color white
+      .buy:hover
+          cursor pointer
+      .buy:active
+         border 2px solid #2387F3
+    .content1
+      display none
+      position absolute
+      width 960px
+      height 450px
+      top 155px
+      h1 
+        text-align center
+        font-size 22px
+      .note
+        background: url('../images/Unknown-20.png')
+        background-size: cover
+        position absolute
+        width 220px
+        height 130px
+        left 270px
+        top 100px
+      .pad
+        position absolute
+        background: url('../images/Unknown-19.png') no-repeat center
+        background-size 90px
+        width 120px
+        height 130px
+        
+        left 550px
+        top 100px
+      p 
+        font-size 13pt
+        position absolute
+        top 270px
+        width 960px
+        text-align center
+        line-height 24px
+      .button
+        background: #2387F3
+        width: 213px
+        height: 45px
+        border-radius: 20px
+        border: none
+        position: absolute
+        left: 50%
+        font-size: 15px 
+        font-family: $opensans
+        transform: translateX(-50%)
+        top: 395px
+        outline: none
+        color white
+      .button:hover
+        transition: background 0.3s ease
+        background: #0473EA
+        cursor: pointer
+    .content2
+      display none
+      position absolute
+      width 960px
+      height 450px
+      top 155px
+      h1 
+        position absolute
+        width 960px
+        text-align center
+        font-size 22px
+        line-height 32px
+        top 4px
+      p
+        position absolute
+        width 960px
+        text-align center
+        font-size 11pt
+        top 140px  
+        line-height 22px 
+      .form
+        
+        position absolute 
+        width 260px
+        height 220px
+        top 240px
+        left 50%
+        transform translateX(-50%)
+        .name
+          color: #fff
+          font-size: 14px
+          position absolute
+          width 245px
+          height 15px
+          border 2px solid white
+          border-radius 7px
+          padding 8px
+          placeholder-color(#fff)
+          background-color #464552
+        .numb
+          color: #fff
+          font-size: 14px
+          position absolute
+          padding 8px
+          width 245px
+          height 15px
+          top 41px
+          border 2px solid white
+          placeholder-color(#fff)
+          border-radius 7px
+          background-color #464552
+        .email
+          color: #fff
+          font-size: 14px
+          position absolute
+          placeholder-color(#fff)
+          padding 8px
+          width 245px
+          height 15px
+          top 83px
+          border 2px solid white
+          border-radius 7px
+          background-color #464552
+        .button
+          background: #2387F3
+          width: 213px
+          height: 45px
+          border-radius: 20px
+          border: none
+          position: absolute
+          left: 50%
+          font-size: 15px 
+          font-family: $opensans
+          transform: translateX(-50%)
+          top: 155px
+          outline: none
+          color white
+       .button:hover
+          transition: background 0.3s ease
+          background: #0473EA
+          cursor: pointer
+    .content3
+      display block
+      position absolute
+      width 960px
+      height 450px
+      top 155px
+      .txt
+        position absolute
+        width 210px
+        height 110px
+        left 215px
+        top 10px
+        border 1px solid #2387F3
+        border-radius 6px
+        h2
+          position absolute
+          font-size 9pt
+          font-weight bold
+          line-height 15px
+          left -11px
+        p
+          position absolute
+          font-size 8pt
+          top 55px
+          left 12px
+          line-height 15px
+        a
+          position absolute
+          top 90px
+          left 10px
+          color #2387F3
+          text-decoration none
+          font-size 8pt
+        .sl1
+          position absolute
+          top 90px
+          left 105px
+      .price
+          position absolute
+          width 210px
+          height 110px
+          right 215px
+          top 10px
+          background-color #2387F3
+          border-radius 6px
+        h2 
+          position absolute
+          font-size 10pt
+          font-weight bold
+          width 210px
+          top 15px
+          left -5px
+          text-align center
+        table
+          position absolute
+          font-size 10pt
+          top 55px
+          left 15px
+        td
+          padding 3px
+
+        .two
+         text-decoration line-through
+    .contacts
+      .chosen-select
+        position absolute
+        top 160px
+        left 50%
+        transform translateX(-50%)
+        font-size: 18px
+        border-radius: 10px
+      table
+        position absolute
+        font-size 7pt
+        top 190px
+        line-height 15px
+        left 52%
+        transform translateX(-50%)
+        height 150px
+        td 
+          padding 25px 30px 0 30px 
+          h3
+            font-weight bold
+            font-size 12pt
+            line-height 20px
+            width 250px
+
+          a
+            color #2387F3
+            font-size 9pt
+            margin-top 5px
+            text-decoration none
+          p 
+            line-height 20px
+            margin-top 15px
+            margin-bottom 5px
+            font-size 10pt
+      .button
+        background: #2387F3
+        width: 150px
+        height: 45px
+        border-radius: 20px
+        border: none
+        position: absolute
+        left: 50%
+        font-size: 15px 
+        font-family: $opensans
+        transform: translateX(-50%)
+        top: 500px
+        outline: none
+        color white
+      .button:hover
+        transition: background 0.3s ease
+        background: #0473EA
+        cursor: pointer
+          
+          
+.active-button
+  background-color: black
+      
+
+      
+      

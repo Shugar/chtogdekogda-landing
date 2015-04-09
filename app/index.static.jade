@@ -2,50 +2,57 @@ doctype html
 head
   meta(name="viewport" content="width=device-width")
   link(rel="stylesheet" href="stylesheets/app.css")
+  link(rel="stylesheet" href="stylesheets/chosen.css")
+  link(rel="stylesheet" href="stylesheets/chosen.min.css")
+  link(rel="shortcut icon" href="favicon-uss.ico")
   meta(charset="utf-8")
-  title ЧТО? ГДЕ? КОГДА?
+  title Кубок России по "Что? Где? Когда?" среди юристов | ЮСС "Система Юрист"
 
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
-
-
   script.
+    require('wow');
+    new WOW().init();
     require('initialize');
+    require('main');
     require('jquery.stellar');
+    require('tipped');
+    $(document).ready(function() {
+      Tipped.create('.tooltip');
+    });
      $(function() {
         $.stellar({
            horizontalScrolling: false
            });
       });
 
-
 body
 
 .header
   .head
-    .container
+    .container.wow.fadeIn
         img(src="images/logo_small.png").logo
         img(src="images/lol.png").olivki
         p ЧТО? ГДЕ? КОГДА?
         .login
           a(href="") Вход
   .middle
-    .parallax
+    .parallax.wow.fadeIn
       .par-1(data-stellar-ratio="2.5")
       .par-2(data-stellar-ratio="1.2")
       .par-3(data-stellar-ratio="3.1")
       .par-4(data-stellar-ratio="2")
       .par-5(data-stellar-ratio="2.5")
-      .par-6(data-stellar-ratio="1.5")  
-    .container
-      img(src="images/ole.png")
-      p.kubok Онлайн кубок России по игре
-      h1 ЧТО? ГДЕ? КОГДА?
-      p.urists среди юристов
-      h2 13 апреля
-      button РЕГИСТРАЦИЯ
+      .par-6(data-stellar-ratio="2")  
+    .container.wow.fadeIn
+      img(src="images/ole.png").wow.fadeIn
+      p.kubok.wow.fadeIn Онлайн кубок России по игре
+      h1.wow.fadeIn ЧТО? ГДЕ? КОГДА?
+      p.wow.fadeIn.urists среди юристов
+      h2.wow.fadeIn 13 апреля
+      button.wow.fadeIn РЕГИСТРАЦИЯ
   .social-buttons
-    .container
+    .container.wow.fadeIn
       table
         tr
           td.one Пусть все узнают!
@@ -58,7 +65,7 @@ body
           td.five 
             a(href="") Twitter
 .judges
-  .container
+  .container.wow.fadeIn
     p.judgers СУДЬИ
     .judgainer
       .one
@@ -75,43 +82,143 @@ body
           p.text главный редактор Системы Юрист, игрок спортивной версии «Что? Где? Когда?», капитан команды
 
 .jury
-  .container-2
+  .container-2.wow.fadeIn
     p.jurytext ИГРОВОЕ ЖЮРИ
     .photos
-      img(src="images/Group.png")
+      span.jury-1.tooltip(title="<span style='font-weight: bold;'>Виктория Рыбалкина</span>, руководитель горячей линии ЮСС «Система Юрист»")
+      span.jury-2.tooltip(title="<span style='font-weight: bold;'>Елена Глебова</span>, эксперт горячей линии ЮСС «Система Юрист»")
+      span.jury-3.tooltip(title="<span style='font-weight: bold;'>Дмитрий Гуров</span>, эксперт горячей линии ЮСС «Система Юрист» (онлайн-помощник)")
+      span.jury-4.tooltip(title="<span style='font-weight: bold;'>Александр Кобзарев</span>, эксперт горячей линии ЮСС «Система Юрист»")
+      span.jury-5.tooltip(title="<span style='font-weight: bold;'>Мария Комарова</span>, ведущий эксперт ЮСС «Система Юрист», кандидат юридических наук")
+      span.jury-6.tooltip(title="<span style='font-weight: bold;'>Ирина Коноплева</span>, эксперт горячей линии ЮСС «Система Юрист», консультант по налогам и сборам, действующий член Палаты налоговых консультантов РФ")
+      span.jury-7.tooltip(title="<span style='font-weight: bold;'>Юлия Копеева</span>, старший эксперт ЮСС «Система Юрист»")
+      span.jury-8.tooltip(title="<span style='font-weight: bold;'>Владислав Кузнецов</span>, шеф-редактор ЮСС «Система Юрист»")
+      span.jury-9.tooltip(title="<span style='font-weight: bold;'>Арсен Магамаев</span>, старший эксперт горячей линии ЮСС «Система Юрист»")
+      span.jury-10.tooltip(title="<span style='font-weight: bold;'>Роман Масаладжиу</span>, кандидат юридических наук, ведущий эксперт ЮСС «Система Юрист»")
+      span.jury-11.tooltip(title="<span style='font-weight: bold;'>Руслан Назаров</span>, эксперт горячей линии ЮСС «Система Юрист»")
+      span.jury-12.tooltip(title="<span style='font-weight: bold;'>Виталий Перелыгин</span>, старший эксперт ЮСС «Система Юрист»")
+      span.jury-13.tooltip(title="<span style='font-weight: bold;'>Виктория Рыбалкина</span>, руководитель горячей линии ЮСС «Система Юрист»")
+      span.jury-14.tooltip(title="<span style='font-weight: bold;'>Анастасия Фалеева</span>, эксперт горячей линии ЮСС «Система Юрист» (онлайн-помощник)")
+      span.jury-15.tooltip(title="<span style='font-weight: bold;'>Светлана Флоненкова</span>, эксперт Горячей линии ЮСС «Система Юрист»")
+      span.jury-16.tooltip(title="<span style='font-weight: bold;'>Наталья Шмакова</span>, старший эксперт ЮСС «Система Юрист», кандидат юридических наук")
+      span.jury-17.tooltip(title="<span style='font-weight: bold;'>Валентина Яковлева</span>, ведущий эксперт горячей линии ЮСС «Система Юрист»")
 .rules
-  .container
+  .container.wow.fadeIn
     .content
-      img.five(src="images/5.png")
-      h1 простых правил
+      img.five(src="images/5.png").wow.fadeInUp
+      h1.wow.fadeIn простых правил
       .rulainer
-        .rule1
+        .rule1.wow.fadeIn
           p.rulename 10 вопросов
           p.discript по будням с 13 по 24 апреля
-        .rule2
+        .rule2.wow.fadeIn
           p.rulename 24 часа на ответ
           p.discript в 10:00 мск мы публикуем новый вопрос и ответ на уже сыграный
-        .rule3
+        .rule3.wow.fadeIn
           p.rulename Одна апелляция
           p.discript Можно обжаловать только один ответ за игру
-        .rule4
+        .rule4.wow.fadeIn
           p.rulename Одна попытка
           p.discript Можно дать только один ответ
-        .rule5
+        .rule5.wow.fadeIn
           p.rulename Объективная проверка
           p.discript Игровое жюри проверит правильность каждого ответа
-      img.sculpture(src="images/Unknown-17.png")
+      img.sculpture(src="images/Unknown-17.png").wow.fadeInRight
       .entergame
-        button ПЕРЕЙТИ В ИГРУ
+        button.wow.fadeInUp ПЕРЕЙТИ В ИГРУ
 
 .allplaces
-  .container
-    p.zagolovok В офисе, дома и в дороге
-    img(src="images/Bitmap.png")
-    p.text Игра доступна с любых компьютеров, мобильных устройств и планшетов
+  .container.wow.fadeIn
+    p.zagolovok.wow.fadeInDown В офисе, дома и в дороге
+    img(src="images/Bitmap.png").wow.fadeIn
+    p.text.wow.fadeInUp Игра доступна с любых компьютеров, мобильных устройств и планшетов
+.system
+  .parallax-2
+    .par-1(data-stellar-ratio="2.5")
+    .par-2(data-stellar-ratio="1.2")
+    .par-3(data-stellar-ratio="3.1")
+    .par-4(data-stellar-ratio="2")
+    .par-5(data-stellar-ratio="2.5")
+    .par-6(data-stellar-ratio="1.5")  
+  .container.wow.fadeIn
+    h1 О Системе Юрист
+    .buttons
+      input(type='button' name='try' value='Попробовать' class='try')
+      input(type='button' name='call' value='Заказать звонок' class='call')
+      input(type='button' name='buy' value='Купить' class='buy')
+    .content1
+      h1 Юридическая справочная система
+      .note
+      .pad
+      p с полной бесплатной правовой базой, множеством практических рекомендаций<br>компетентных экспертов, с архивом книиг и журналов, с новостями, видеосеминарами,<br>справочником, горячей линией и онлайн-поддержкой
+      input(type='button' name='demo' value='Получить демодоступ' class='button')
+    .content2
+      h1 Закажите звонок, и мы перезвоним<br>в удобное для Вас время.
+      p Звонок ни к чему Вас не обязывает - мы расскажем о Системе,<br>предложим самые выгодные условия покупки<br>и ответим на все вопросы.
+      form.form 
+        input(type='text' name='name' placeholder='Как к Вам обратиться *' class="name")
+        input(type='text' name='numb'  placeholder='Телефон для связи *' class="numb")
+        input(type='text' name='email'  placeholder='Электронная почта *' class="email")
+        input(type='submit' name='call' value='Заказать звонок' class='button')
+    .content3
+      .txt
+        h2 ООО "Актион-диджитал".<br>Единый сервисный центр
+        p ул. Новодмитровская, д.5А, стр.8<br>8 (800) 333-01-15
+        a(href='www.1jur.ru') www.1jur.ru 
+        a(href='' class="sl1") tp@1jur.ru
+      .price
+        h2 Рекомендованная цена
+        table
+          tr
+            td Полгода
+            td
+            td 34 429 Р
+          tr.second
+            td.one Год
+            td 65 045 Р
+            td.two 68 856 Р
+      .contacts
+        select.chosen-select(data-placeholder='Выберете Ваш город' size='1' name='city')
+          option Москва
+          option Санкт-Петербург
+          option Екатеренбург
+          option Краснодар
+          option Новосибирск
+          option Ростов-на-Дону
+          option Самара
+          option Уфа
+          option Хабаровск
+        table
+          tr
+            td.one
+              h3 Актион-пресс
+              p ул. Новодмитровская, д. 5А, стр. 8<br>8 (495) 785-01-13
+              a(href='') n.korobov@action-press.ru
+            td.three
+              h3 Консалтинговая группа «Ермак»
+              p ул. Новодмитровская, д. 5А, стр. 8<br>8 (495) 785-01-13
+              a(href='') n.korobov@action-press.ru
+            td.four
+              h3 Актион-пресс
+              p ул. Новодмитровская, д. 5А, стр. 8<br>8 (495) 785-01-13
+              a(href='') n.korobov@action-press.ru
+          tr 
+            td.five
+              h3 Актион-пресс
+              p ул. Новодмитровская, д. 5А, стр. 8<br>8 (495) 785-01-13
+              a(href='') n.korobov@action-press.ru
+            td.seven
+              h3 Актион-пресс
+              p ул. Новодмитровская, д. 5А, стр. 8<br>8 (495) 785-01-13
+              a(href='') n.korobov@action-press.ru 
+            td.eight
+              h3 Актион-пресс
+              p ул. Новодмитровская, д. 5А, стр. 8<br>8 (495) 785-01-13
+              a(href='') n.korobov@action-press.ru 
+        input(type='button' name='demo' value='Заказать' class='button')
 
 .footer
-  .container
+  .container.wow.fadeIn
     .left
       .social
         a(href="") 
@@ -122,7 +229,7 @@ body
           img(src="images/l.png")
         a(href="")
           img(src="images/x.png")
-      p.one © Актион-диджитал, 2014
+      p.one © Актион-диджитал, 2015
       a(href="").two Правила игры
       a(href="").three Технические требования
     .center
@@ -133,3 +240,7 @@ body
     .right
       p.one 8 800 333-01-15 
       p.two с 9 до 18 по Москве звонок бесплатный
+.created
+  .container.wow.fadeIn
+    p Made in 
+      span CATAPULTA
